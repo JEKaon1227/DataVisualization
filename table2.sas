@@ -1,3 +1,5 @@
+libname myAss "/home/u61813922/Assignment";
+
 data myAss.table2;
 input gender $1-7  			/* Respondent gender whether male or female */
 	age $8-21  				/* Respondent range of Age */
@@ -67,4 +69,7 @@ Female Less than 18    Student  Below 1000                              Pants  S
   Male Less than 18    Student 2000 - 4000                              Shoes  Superstar   Yearly and above      Below RM 500             Quality, Price, Promotions      Weekly Retail Store                                                                       Events                                        Gym        No       8
 Female 36 and above    Student  Below 1000 Accessories (Exp : Cap, Sock, Bag)      Yeezy       Once a month   RM 500 - RM 800        Quality, Appearance, Promotions      Yearly       Online                                           Social Media (Facebook, Instagram)                  Running, Jogging, Outdoor     Maybe       8
 ;
+run;
+
+proc print data = myAss.table2; 	/* Print the results */
 run;
