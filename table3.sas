@@ -1,3 +1,5 @@
+libname myAss "/home/u61813922/Assignment";
+
 data myAss.table3;
 input gender $1-7  			/* Respondent gender whether male or female */
 	age $8-21  				/* Respondent range of Age */
@@ -67,4 +69,7 @@ Female        26-35    Student  Below 1000 Accessories (Exp : Cap, Sock, Bag)  S
   Male        18-25    Student  Below 1000 Accessories (Exp : Cap, Sock, Bag)      Yeezy   Yearly and above      Below RM 500                                Quality       Daily Retail Store                                           Social Media (Facebook, Instagram)                                    Running        No       5
 Female 36 and above   Employee  Below 1000                             Shirts Ultraboost Every 2 to 3 month  RM 800 - RM 1200             Quality, Price, Promotions     Monthly       Online                                                                Advertisement               Jogging, Basketball, Running     Maybe       5
 ;
+run;
+
+proc print data = myAss.table3; 	/* Print the results */
 run;
