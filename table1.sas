@@ -1,3 +1,5 @@
+libname myAss "/home/u61813922/Assignment";
+
 data myAss.table1;
 input gender $1-7  			/* Respondent gender whether male or female */
 	age $8-21  				/* Respondent range of Age */
@@ -18,7 +20,7 @@ input gender $1-7  			/* Respondent gender whether male or female */
 datalines;
 Female Less than 18    Student  Below 1000                             Shirts Ultraboost   Few times a year RM 1200 and above             Appearance, Price, Quality       Daily Retail Store                                                                Advertisement                            Gym, Basketball     Maybe       6
   Male 36 and above    Student  Below 1000                             Shirts Ultraboost Every 2 to 3 month  RM 800 - RM 1200                    Promotions, Quality       Daily Retail Store                                                            Friends or Family                   Gym, Running, Basketball       Yes       8
-  Male        26-35    Student  Below 1000                              Pants      Yeezy       Once a month   RM 500 - RM 800                         Quality, Price      Yearly Retail Store                                                                Advertisement               Jogging, Basketball, Running       Yes       8
+  Male        26-35    Student  Below 1000                              Pants       Yeezy       Once a month   RM 500 - RM 800                         Quality, Price      Yearly Retail Store                                                                Advertisement               Jogging, Basketball, Running       Yes       8
 Female Less than 18    Student  Below 1000                              Pants      Yeezy   Yearly and above   RM 500 - RM 800                      Promotions, Price       Daily Retail Store                                           Social Media (Facebook, Instagram)                                    Running       Yes       5
 Female        26-35    Student  Below 1000                             Shirts    Ozweego Every 2 to 3 month      Below RM 500                      Promotions, Price      Weekly       Online                                                            Friends or Family                                    Running        No       7
 Female 36 and above    Student  Below 1000 Accessories (Exp : Cap, Sock, Bag)    Ozweego   Yearly and above      Below RM 500                             Promotions     Monthly Retail Store                                           Social Media (Facebook, Instagram)                                 Basketball     Maybe       7
@@ -67,4 +69,7 @@ Female 36 and above    Retired  Below 1000                             Shirts St
 Female        26-35    Student  Below 1000                              Pants Ultraboost   Few times a year   RM 500 - RM 800                    Quality, Promotions       Daily Retail Store                                                            Friends or Family                   Basketball, Running, Gym     Maybe       5
   Male Less than 18    Student  Below 1000 Accessories (Exp : Cap, Sock, Bag)      Yeezy   Yearly and above  RM 800 - RM 1200                         Quality, Price      Yearly       Online                                                                       Events                           Outdoor, Jogging       Yes       8
 ;
+run;
+
+proc print data = myAss.table1; 	/* Print the results */
 run;
