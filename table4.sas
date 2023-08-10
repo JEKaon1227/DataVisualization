@@ -1,3 +1,5 @@
+libname myAss "/home/u61813922/Assignment";
+
 data myAss.table4;
 input gender $1-7  			/* Respondent gender whether male or female */
 	age $8-21  				/* Respondent range of Age */
@@ -68,3 +70,6 @@ Female        18-25    Student  Below 1000                              Shoes  S
   Male        18-25    Student  Below 1000 Accessories (Exp : Cap, Sock, Bag) Stan Smith Every 2 to 3 month      Below RM 500                    Quality, Promotions       Daily Retail Store                            Social Media (Facebook, Instagram), Advertisement                               Gym, Jogging        No       9
   ;
   run;
+  
+proc print data = myAss.table1; 	/* Print the results */
+run;
