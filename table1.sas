@@ -1,21 +1,22 @@
 libname myAss "/home/u61813922/Assignment";
 
+/* Date Entry */
 data myAss.table1;
-input gender $1-7  			/* Respondent gender whether male or female */
-	age $8-21  				/* Respondent range of Age */
-	occupation $22-30  	 	/* Respondent Occupation */
-	salary $31-43	   		/* Respondent Monthly Salary */
-	category $44-78  		/* Respondent categories the item / product such as shoes, pants, shirts, accessories*/
-	series $79-89  			/* Respondent choose the favorite series shoes like Ultraboost, Yeezy*/
-	often $90-108  			/* Respondent how often purchase the product such as few times a year */
-	budget $109-126  		/* Respondent how many budget such as below 500*/
-	factor $127-164  		/* What is the factor to lead respondent buy this product such as promotions, quality*/
-	requently $165-176  	/* Respondent how frequently use the product that purchased like daily, weekly*/
-	purchase $177-190 	 	/* How respondent purchase the product such as online, reatil store */
-	recognition $191-267 	/* How respondent know about the product like social media*/
-	purpose $268-310  		/* What is the purpose purchase the product like jogging*/
-	recommend $311-321  	/* Will respondent recomment Adidas product to people like family */
-	rating; 				/* Rate the product */
+input Gender $1-7  			/* Respondent gender whether male or female */
+	Age $8-21  				/* Respondent range of Age */
+	Occupation $22-30  	 	/* Respondent Occupation */
+	Salary $31-43	   		/* Respondent Monthly Salary */
+	Category $44-78  		/* Respondent categories the item / product such as shoes, pants, shirts, accessories*/
+	Series $79-89  			/* Respondent choose the favorite series shoes like Ultraboost, Yeezy*/
+	Often $90-108  			/* Respondent how often purchase the product such as few times a year */
+	Budget $109-126  		/* Respondent how many budget such as below 500*/
+	Factor $127-164  		/* What is the factor to lead respondent buy this product such as promotions, quality*/
+	Frequently $165-176  	/* Respondent how frequently use the product that purchased like daily, weekly*/
+	Purchase $177-190 	 	/* How respondent purchase the product such as online, reatil store */
+	Recognition $191-267 	/* How respondent know about the product like social media*/
+	Purpose $268-310  		/* What is the purpose purchase the product like jogging*/
+	Recommend $311-321  	/* Will respondent recomment Adidas product to people like family */
+	Rating; 				/* Rate the product */
 	 
 datalines;
 Female Less than 18    Student  Below 1000                             Shirts Ultraboost   Few times a year RM 1200 and above             Appearance, Price, Quality       Daily Retail Store                                                                Advertisement                            Gym, Basketball     Maybe       6
