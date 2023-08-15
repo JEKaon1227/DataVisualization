@@ -1,10 +1,11 @@
+/* create library called myAss */
 libname myAss "/home/u61813922/Assignment";
 
-/* Date Entry */
+/* Date Preparation - Merge Tables */
 data myAss.combined; 				/* combine and merge the table */
 set myAss.table1					/* Total = 200 data, each people enter 50 data */
 	myAss.table2					
-	myAss.table3
+	myAss.table3	
 	myAss.table4;
 run;
 
